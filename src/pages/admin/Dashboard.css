@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+}
+
+.main-container{
+    background-color: #eaeff5;
+    display: grid;
+    grid-template-columns: minmax(200px, 230px) auto auto auto auto auto;
+    grid-template-rows: 60px 70px auto;
+    gap: 10px;
+    padding: 25px;
+    padding-right: 33px;
+}
+.nav-adminboard-title{
+    grid-column: 2/ span 3;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 48px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #fb5607;
+}
+.nav-admin-searchbox{
+    grid-column: 5 /span 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-admin-searchbox input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.nav-new-order{
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.nav-order-pending{
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.nav-shipping-order{
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.nav-order-completed{
+    background-color: white;        
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.nav-order-canceled{
+    background-color: white;        
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.dashboard-left-panel{    
+    grid-column: 1;
+    grid-row: 1/ span 3;
+    border-radius: 8px;
+    padding: 8px;
+    height: 890px;
+}
+.left-panel-logo{
+    background: white;
+    padding: 23px;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+}
+.group1 nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    margin: 10px 0px 0px 35px;
+    height: 35px;
+    padding-left: 10px;
+}
+.nav-links{
+    margin-top: 20px;
+}
+
+.nav-links button{
+    border-style: none;
+    background-color: #eaeff5;
+    margin-left: 39px;
+    margin-top: 15px;
+    display: flex;
+    width: 176px;
+    padding: 7px;
+    cursor: pointer;
+}
+.nav-links button:hover{
+    border-radius: 10px;
+    font-weight: bold;
+}
+.nav-links button span{
+    font-size: 16px;
+    margin-left: 8px;
+}
+.nav-links button span:hover{
+    font-size: 18px;
+}
+
+/*Active (or) " " */
+.nav-links a:hover{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.active-link{
+    background: rgb(255, 195, 83);
+    font-weight:bold;
+    border-radius: 5px;
+}
+
+.main-field{
+    background-color: white;
+    grid-column: 2/ span 5;
+    height: 750px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+@media (max-width:1400px){
+    .nav-adminboard-title{
+        font-size: 43px;
+    }
+}
+@media (max-width:1200px){
+    .nav-adminboard-title{
+        font-size: 35px;
+    }
+}
+@media (max-width:1090px){
+    .nav-adminboard-title{
+        font-size: 28px;
+    }
+}

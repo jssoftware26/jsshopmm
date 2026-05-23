@@ -1,0 +1,32 @@
+.customerlist-table-style{
+    height: 700px;
+    overflow-y: auto;
+}
+
+.customerlist-table-style thead{
+    position: sticky;
+    top: 0px;
+    background: #e9ecef;
+    z-index: 10;
+}
+
+.customerlist-table-style table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customerlist-table-style th, td{
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.customerlist-table-style tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.customerlist-table-style tr:hover{
+    background-color: #ddd;
+}
+
+.customerlist-table-style thead tr th{
+    height: 45px;
+}

@@ -1,0 +1,153 @@
+.orders-container{
+    padding:20px;
+    overflow-y: scroll;
+    height: 720px;
+}
+
+.orders-title{
+    margin-bottom:20px;
+    color:#333;
+}
+
+.order-card{
+    background:white;
+    border-radius:10px;
+    padding:12px 15px;
+    margin-bottom:13px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.order-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+    padding-bottom:5px;
+}
+
+.status-box span{
+    background:#fff3cd;
+    color:#856404;
+    padding:5px 5px;
+    border-radius:15px;
+}
+
+.order-products{
+    margin-top:5px;
+    margin-left: 5px;
+}
+
+.product-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+.product-row img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.product-info h4{
+    margin-bottom:5px;
+}
+
+.order-total{
+    margin-top:10px;
+    text-align:right;
+}
+
+.order-total h3{
+    color:#e85d04;
+    margin-top:10px;
+}
+
+.order-buttons{
+    margin: 10px 0px;
+    display:flex;
+    gap:8px;
+    justify-content:flex-end;
+}
+
+.order-buttons button{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.confirm-btn{
+    background:#0d6efd;
+    color:white;
+}
+.confirm-btn:hover{
+    font-size: 14px;
+}
+
+.shipping-btn{
+    background:#ffb703;
+    color:white;
+}
+.shipping-btn:hover{
+    font-size: 14px;
+}
+
+.complete-btn{
+    background:#2a9d8f;
+    color:white;
+}
+.complete-btn:hover{
+    font-size: 14px;
+}
+
+.order-dropdown{
+    margin-top:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.order-dropdown summary{
+    padding:8px;
+    cursor:pointer;
+    background:#f8f9fa;
+    font-weight:bold;
+    user-select:none;
+}
+
+.order-dropdown summary:hover{
+    background:#ececec;
+}
+
+/*-------------------------Print Btn-------------------------*/
+.print-btn{
+    padding:8px 15px;
+    border:none;
+    border-radius:6px;
+    background:#ffae00;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.print-btn:hover{
+    opacity:0.9;
+}
+.delete-btn{
+    padding:8px 15px;
+    border:none;
+    border-radius:6px;
+    background:#fb5607;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.delete-btn:hover{
+    opacity:0.9;
+}

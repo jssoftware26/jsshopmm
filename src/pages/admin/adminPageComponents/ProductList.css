@@ -1,0 +1,30 @@
+.tablebox-style{
+    height: 680px;
+    overflow-y: auto;
+}
+
+.tablebox-style thead{
+    position: sticky;
+    top: 0px;
+    background: #e9ecef;
+    z-index: 10;
+}
+
+.tablebox-style table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablebox-style th, td{
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tablebox-style tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.tablebox-style thead tr th{
+    height: 45px;
+}

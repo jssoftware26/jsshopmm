@@ -1,0 +1,128 @@
+.productcart-container{
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 20px;
+}
+
+.productcart-left{
+    grid-column: 1;
+}
+.empty-text-style{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+    color: rgb(214, 214, 214);
+}
+.productcart-left button{
+    border: none;
+    background: #ffa66b;
+    padding: 2px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.productcart-left button:hover{
+    color: white;
+    background: #ff7213;
+    font-size: 14px;
+}
+.productcart-nav-container{
+    background-color: #ff6000;
+    height: 25px;
+    grid-row: 1;
+    grid-column: 1/ span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*Sticky*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;;
+}
+.productcart-nav-container button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.productcart-right{
+    grid-column: 2;
+}
+.productcart-right button{
+    width: 100%;
+    margin-top: 30px;
+    height: 45px;
+    font-size: 19px;
+    font-weight: bold;
+    background: #ff7213;
+    color: white;
+    border: none;
+    border-radius: 10px;    
+    cursor: pointer;
+}
+.productcart-right button:hover{
+    background: #ff893a;
+    color: black;
+}
+
+@media  (max-width:450px){
+    .productcart-container{  
+        display: flex;
+        flex-direction: column;
+        gap: 20px;   
+    }
+    .productcart-nav-container{
+        height: 38px;
+        position: relative;
+        z-index: 1000;
+    }
+    .second-nav-container{        
+        position: sticky;
+        z-index: 999;
+    }
+
+    .empty-text-style{
+        margin: 0px;
+        padding: 80px 0px;
+        font-size: 25px;
+    }
+    .home-main-container{
+        background: none;       
+    }
+    .productcart-right{
+        margin-bottom: 80px;
+        padding: 0px 20px;
+    }
+    .productcart-right p{
+        padding: 4px 0px;
+        gap: 3px;
+        font-size: 14px;
+    }
+    .productcart-left-detail{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .third-nav-container p{
+        margin-left: 15px;
+    }
+    .footer-section-container{        
+        display: flex;
+        flex-direction: column;        
+        justify-content: space-evenly;
+        background-color: #f5f5f5;
+        padding: 10px;
+        color: rgb(66, 66, 66);
+    }
+    .f1{
+        background: #e4e4e4;
+        padding: 5px;
+    }
+    .f2{
+        background: #9c9c9c;
+        padding: 5px;        
+    }
+    .f2 strong, p, small{
+        color: rgb(236, 236, 236);
+    }
+}

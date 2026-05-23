@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.myaccount-container{
+    display: grid;
+    grid-template-columns: auto 40% auto;
+}
+
+.myaccount-top-nav{
+    height: 25px;
+    grid-row: 1;
+    grid-column: 1/ span 3;
+    background-color: #ff6000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*Sticky*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+.myaccount-top-nav button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.myaccount-second-nav{
+    background-color: rgb(240, 240, 240);
+    height: 45px;
+    grid-row: 2;
+    grid-column: 1/ span 3;
+    /*Sticky*/
+    position: sticky;
+    top: 25px;
+    z-index: 999;
+    padding: 10px 20px;
+    border-bottom: 0.2px solid #ddd;
+}
+
+.myaccount-main-section{
+    grid-row: 3;
+    grid-column: 2;
+    height: 600px;
+    margin-top: 20px;
+    background: white;
+}
+.profile-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+}
+.profile-picture img{
+    border: 0.5px solid #ddd;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;    
+    margin-bottom: 20px;
+}
+.account-detail table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.account-detail td{
+    height: 50px;
+    width: auto;
+}
+
+/*-------------------------------------------*/
+.myaccount-left-panel{display: none;}
+.myaccount-right-panel{display: none;}
+/*-------------------------------------------*/
+
+/*----------------------Media Size------------------------*/
+@media (max-width:1600px){
+    .myaccount-container{
+        display: grid;        
+        grid-template-columns: auto 50% auto;
+    }
+}
+@media (max-width:1200px){
+    .myaccount-container{
+        display: grid;        
+        grid-template-columns: auto 55% auto;
+    }
+}
+@media (max-width:1000px){
+    .myaccount-container{
+        display: grid;        
+        grid-template-columns: auto 60% auto;
+    }
+}
+@media (max-width:850px){
+    .myaccount-container{
+        display: grid;        
+        grid-template-columns: auto 70% auto;
+    }
+}
+@media (max-width:600px){
+    .myaccount-container{
+        display: grid;        
+        grid-template-columns: auto 100% auto;
+    }
+}
+@media (max-width:450px){
+    .account-detail{
+        margin: 0px 10px;
+    }
+    .account-detail td{
+        width: 8%;
+    }
+}
